@@ -1,65 +1,207 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/808f406d9a.js" crossorigin="anonymous"></script>
-    <title>Erick Leandro</title>
-</head>
-<body>
-    <header>
-        <nav class="menu">
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portifolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>s
-        </nav>
-        <div class="titulo">
-          <h1 class="site-title">Erick Leandro</h1>
-          <h2 class="site-subtitle">Developer and Scientific Researcher</h2>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Erick Leandro - DEV</title>
+    <link rel="icon" href="imagens/favicon.png">
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="estilo.css" rel="stylesheet">
+    <script src="js/texto.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+
+    <nav class="navbar navbar-fixed-top navbar-inverse navbar-transparente">
+      <div class="container">
+        
+        <!-- header -->
+        <div class="navbar-header">
+          
+          <!-- botao toggle -->
+          <button type="button" class="navbar-toggle collapsed"
+                  data-toggle="collapse" data-target="#barra-navegacao">
+            <span class="sr-only">alternar navegação</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a href="index.html" class="navbar-brand">
+            <span class="img-logo">Erick Leandro</span>
+          </a>
+
         </div>
-         
-    </header>
-    <section class="portfolio" id="portfolio">
-      <h2>Portfólio</h2>
-      <div class="grid">
-        <figure>
-          <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="Web Developer">
-          <figcaption>Web Developer</figcaption>
-        </figure>
-        <figure>
-          <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
-          <figcaption>Mobile</figcaption>
-        </figure>
-        <figure>
-          <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Developer">
-          <figcaption>Developer</figcaption>
-        </figure>
-        <figure>
-          <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg" alt="Academic">
-          <figcaption>Academic</figcaption>
-        </figure>
+
+        <!-- navbar -->
+        <div class="collapse navbar-collapse" id="barra-navegacao">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#servicos"">Desenvolvimento</a></li>
+            <li><a href="#recursos">Projetos</a></li>
+            <li class="divisor" role="separator"></li>
+            <li><a href="">Entrar</a></li>
+          </ul>
+        </div>
+      </div><!-- /container -->
+    </nav><!-- /nav -->
+
+    <div class="capa">
+      <div class="texto-capa">
+        <h1>Erick Leandro</h1>
+        <a href="https://www.linkedin.com/in/erick-leandro-25aa9952/" class="btn btn-custom btn-roxo btn-lg">Linkedin</a>
+        <a href="https://github.com/jerickleandro" class="btn btn-custom btn-branco btn-lg">Github</a>
+      </div>
+    </div>
+
+    <!-- Conteudos -->
+    <section id="servicos">
+      <div class="container">
+        <div class="row">
+
+          <!-- albuns -->
+          <div class="col-md-6">
+            
+            <div class="row albuns">
+              
+              <div class="col-md-6">
+                <img src="imagens/img1.jpg" class="img-responsive">
+              </div>
+              <div class="col-md-6">
+                <img src="imagens/img2.jpg" class="img-responsive">
+              </div>
+
+            </div><!-- /row -->
+
+            <div class="row albuns">
+              
+              <div class="col-md-6">
+                <img src="imagens/img3.jpg" class="img-responsive">
+              </div>
+              <!-- <div class="col-md-6">
+                <img src="imagens/img4.jpg" class="img-responsive">
+              </div> -->
+
+            </div><!-- /row -->
+
+          </div>
+
+          <!-- servicos -->
+          <div class="col-md-6">
+            <h2>Desenvolvimento:</h2>
+
+            <h3>Web</h3>
+            <p>Atualmente trabalho com Desenvolvimento web na <a href="https://www.showtecnologia.com/">Show Tecnologia</a> com as tecnologias PHP, JS, Jquery, MySql, HTML e CSS.</p>
+
+            <h3>Mobile</h3>
+            <p>Faço parte do projeto de Faço parte do projeto de extenção de desenvolvimento Mobile com as tecnologias Flutter, Java Springboot e MySql. de desenvolvimento Mobile com as tecnologias Flutter, Java Springboot e MySql.</p>
+
+            <h3>Acadêmico</h3>
+            <p>Estudante do IFPE do Curso de ADS, presidente do CA e integrante do laboratório de Ciência de dados</p>
+
+          </div>
+
+        </div>
       </div>
     </section>
-    <section class="contato" id="contact">
-      <h2>Contato</h2>
-      <div class="grid icons">
-        <a target="_blank" href="https://github.com/jerickleandro">
-          <i class="fab fa-github-alt"></i>
-        </a>
-        <a target="_blank" href="https://twitter.com/erick_enda">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a target="_blank" href="https://www.linkedin.com/in/erick-leandro-25aa9952">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="mailto:j.erickleandro@gmail.com">
-          <i class="fas fa-envelope-open-text"></i>
-        </a>
+
+    <section id="recursos">
+      <div class="container">
+        <div class="row">
+          
+          <!-- recursos -->
+          <div class="col-md-4">
+            <h2>Projetos:</h2>
+
+            <h3>Arretadas</h3>
+            <p>Aplicativo que visa a segurança da mulher.</p>
+
+            <h3><a href="https://d3company.herokuapp.com/"  style="text-decoration:none">D3 Co.</a></h3>
+            <p>Sociedade de três amigos para desenvolvimento de projetos.</p>
+
+            <h3><a href="https://youtu.be/ZiwK0rv9RY8" style="text-decoration:none">Palestra</a></h3>
+            <p>Palestra sobre randomicidade, objeto de pesquisa, para a SEINFO 2020.</p>
+          </div>
+
+          <!-- img recursos -->
+          <div class="col-md-8">
+
+            <div class="row rotacionar">
+              
+              <div class="col-md-6">
+                <img src="imagens/iphone1.png" class="img-responsive">
+              </div>
+
+              <div class="col-md-6">
+                <img src="imagens/iphone2.png" class="img-responsive">
+              </div>
+
+            </div><!-- /row -->
+
+          </div>
+
+        </div>
       </div>
     </section>
-</body>
+
+    <!-- Rodape -->
+    <footer id="rodape">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-md-2">
+            <span class="img-logo">Spotify</span>
+          </div>
+
+          <div class="col-md-2">
+            <h4>company</h4>
+            <ul class="nav">
+              <li><a href="https://d3company.herokuapp.com/">D3 Co.</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <h4>comunidades</h4>
+            <ul class="nav">
+              <li><a href="https://github.com/jerickleandro">Github</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <h4>links uteis</h4>
+            <ul class="nav">
+              <li><a href="https://www.linkedin.com/in/erick-leandro-25aa9952/">Linkedin</a></li>
+              <li><a href="mailto:j.erickleandro@gmail.com?subject=Olá%20Erick">E-mail</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <ul class="nav">
+              <li class="item-rede-social"><a href="https://www.facebook.com/j.erickleandro/"><img src="imagens/facebook.png"></a></li>
+              <li class="item-rede-social"><a href="https://twitter.com/erick_enda"><img src="imagens/twitter.png"></a></li>
+              <li class="item-rede-social"><a href="https://www.instagram.com/j_erickleandro/"><img src="imagens/instagram.png"></a></li>
+            </ul>
+          </div>
+
+        </div><!-- /row -->
+      </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
 </html>
