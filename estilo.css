@@ -11,13 +11,12 @@ html, body, .capa {
 }
 
 body {
-	background: url('imagens/Background.svg'),
-				url('imagens/ruido.png'),
-				linear-gradient(50deg,#ff4169,#7c26f8);
-	background-attachment: fixed;
-	font-family: Helvetica,Arial,sans-serif;
+	background: url('imagens/Background.svg') no-repeat center center fixed;
+	background-size: contain;
+	font-family: Helvetica, Arial, sans-serif;
 	overflow-x: hidden;
-}
+  }
+  
 
 /* -- Barra de navegação -- */
 .img-logo {
